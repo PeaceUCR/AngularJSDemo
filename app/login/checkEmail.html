@@ -1,0 +1,6 @@
+<!--Multiple class apply  {'class':expression(true or false)}-->
+
+<div ng-class="{'validate-input':true, 'checking': checkStatus === 'checking', 'valid': checkStatus === 'valid', 'error': checkStatus === 'error'}">
+    <div class="content"><i class="fas fa-spinner"></i><input type="email"/><i class="fas fa-check-circle"></i></div>
+    <div class="error-msg"><i class="fas fa-exclamation-triangle"></i>{{errorMsg}}</div>
+</div>

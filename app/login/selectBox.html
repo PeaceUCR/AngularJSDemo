@@ -1,0 +1,8 @@
+<div class="selectBox" ng-class="{'active':expand}">
+    <p>{{selectedItem?selectedItem:'Please select a country'}} <i class="fas fa-sort-down"></i></p>
+    <div class="options">
+        <div class="search"><input type="text" ng-model="searchkey"><i class="fas fa-search"></i>
+        </div>
+        <p ng-repeat="item in options|hasKeyword:searchkey" ng-click="handleSelect($event)">{{item}}</p>
+    </div>
+</div>
