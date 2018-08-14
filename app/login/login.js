@@ -38,6 +38,9 @@ angular.module('myApp.login', ['ngRoute', 'apiServiceModule'])
         return{
             restrict:'AE',
             link: function (scope, element, attrs) {
+                //attrs is the attribute at  custome directive;
+                //<check-email data-temp="I am directive data"></check-email>
+                console.log(attrs);
                 //https://stackoverflow.com/questions/16066170/angularjs-directives-change-scope-not-reflected-in-ui
                 element[0].querySelector('input').addEventListener('blur',function (event) {
 
